@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Progress</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="progress.css">
+    <!-- <link rel="stylesheet" href="lines.css"> -->
+    <link rel="stylesheet" href="noise.css">
+</head>
+<body>
+<div class="container">
+    <div class="noise-wrapper">
+        <div class="noise">
+        </div>
+    </div>
+    <p class="glitch">
+        <span aria-hidden="true">%username%, time is running out</span>%username%, time is running out
+        <span aria-hidden="true">%username%, time is running out</span>
+    </p>
+    <ul>
+        <li>Hour
+            <div class="progress-container">
+                <span class="progress-value" id="hour-value">0.000%</span>
+                <progress id="hour-progress" max="100"></progress>
+            </div>
+        </li>
+        <li>The day is almost over
+            <div class="progress-container">
+                <span class="progress-value" id="day-value">0.000%</span>
+                <progress id="day-progress" max="100"></progress>        
+            </div>
+        </li>
+        <li>You've already lost this month
+            <div class="progress-container">
+                <span class="progress-value" id="month-value">0.000%</span>
+                <progress id="month-progress" max="100"></progress>
+            </div>
+        </li>
+        <li>There is only so much time left for your plans for year
+            <div class="progress-container">
+                <span class="progress-value" id="year-value">0.000%</span>
+                <progress id="year-progress" max="100"></progress>   
+            </div>
+        </li>
+            <!-- <li>Expected Life
+                <input type="date" id="birth-date" placeholder="Birth Date">
+                <input type="number" id="life-expectancy" placeholder="Life Expectancy (years)">
+                <div class="progress-container">
+                    <span class="progress-value" id="life-value">0.000%</span>
+                    <progress id="life-progress" max="100"></progress>
+                    
+                </div>
+            </li> -->
+    </ul>
+    </div>
+    <!-- <div class="neo-box">
+          <div class="app-circle">
+            <div class="circle-shape">
+              <div class="semi-circle right-side circle-mask"></div>
+              <div class="semi-circle right-side circle"></div>
+              <div class="semi-circle left-side circle-mask"></div>
+              <div class="semi-circle left-side circle"></div>
+            </div>
+            <div class="app-counter-box">
+              <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+            </div>
+            <button class="btn-start">start</button>
+    </div> -->
+<!-- </div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

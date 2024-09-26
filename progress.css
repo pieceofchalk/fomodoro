@@ -1,0 +1,76 @@
+.progress-container {
+    align-items: center;
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+}
+
+
+progress {
+    width: 100%;
+    margin: auto;
+    border-radius: 50px;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+/*    margin-left: -11.5%;*/
+/*  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );*/
+}
+
+progress::-webkit-progress-bar {
+/*  background-color: yellow;*/
+  border-radius: 50px;
+  background-color: #edd06121;
+    box-shadow: 7px 10px 0px 3px rgba(0,0,0,1);
+/*-webkit-box-shadow: 7px 10px 0px 3px rgba(0,0,0,1);*/
+/*-moz-box-shadow: 7px 10px 0px 3px rgba(0,0,0,1);*/
+    border-radius: 10px;
+    height: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 0.5em;
+    margin-bottom:  0.5em;
+    position: relative;
+}
+
+progress::-moz-progress-bar {
+/*  background-color: yellow;*/
+  border-radius: 50px;
+  background-color: #edd06121;
+  box-shadow: 7px 10px 0px 3px rgba(0,0,0,1);
+/*-webkit-box-shadow: 7px 10px 0px 3px rgba(0,0,0,1);
+-moz-box-shadow: 7px 10px 0px 3px rgba(0,0,0,1);*/
+    border-radius: 10px;
+    height: 10px;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 0.5em;
+    margin-bottom:  0.5em;
+    position: relative;
+}
+
+progress::-webkit-progress-value {
+  background-color: #f2d048;
+  border-radius: 50px;
+}
+
+progress::moz-progress-value {
+  background-color: #f2d048;
+  border-radius: 50px;
+}
+
+.progress-value {
+  margin-top: 1em;
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
