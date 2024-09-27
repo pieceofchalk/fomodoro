@@ -1,6 +1,8 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 tg.ready();
+tg.setHeaderColor('#000'); 
+tg.setBackgroundColor('#000');
 
 function leapYear(year)
 {
