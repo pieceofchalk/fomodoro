@@ -64,28 +64,10 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(updateProgressBars, 1000);
 });
 
-
-
-const startBtn = document.querySelector('.btn-start'); 
-const session = document.querySelector('.minutes'); 
-let myInterval; 
-let state = true;
-
-const appTimer = () => {
-  const sessionAmount = Number.parseInt(session.textContent)
-
-  if(state) {
-    state = false;
-    let totalSeconds = sessionAmount * 60;
-
-    const updateSeconds = () => {
-      // Function code here.
-    }
-    myInterval = setInterval(updateSeconds, 1000);
-  } else {
-    alert('Session has already started.')
-  }
-}
+const username = tg.initDataUnsafe.user ? tg.initDataUnsafe.user.first_name : 'User';
+document.getElementById('username').textContent = document.getElementById('username').textContent.replace('%USERNAME%', username);
+// document.getElementById('username1').textContent = document.getElementById('username1').textContent.replace('%USERNAME%', username);
+// document.getElementById('username2').textContent = document.getElementById('username2').textContent.replace('%USERNAME%', username);
 
 
 // drawLines();
